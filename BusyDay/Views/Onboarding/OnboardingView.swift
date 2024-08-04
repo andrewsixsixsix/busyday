@@ -15,6 +15,7 @@ struct OnboardingView: View {
       HStack {
         if showSkipButton {
           Button("SKIP") {}
+            .font(.system())
             .foregroundStyle(.gray)
         }
 
@@ -45,6 +46,7 @@ struct OnboardingView: View {
               vm.prev()
             }
           }
+          .font(.system())
           .foregroundStyle(.gray)
         }
 
@@ -52,6 +54,7 @@ struct OnboardingView: View {
 
         Button(action: { withAnimation { vm.next() } }) {
           Text("\(nextButtonText)")
+            .font(.system())
             .padding(.horizontal, 24)
             .padding(.vertical, 12)
             .foregroundStyle(.white)

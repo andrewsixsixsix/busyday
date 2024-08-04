@@ -16,7 +16,7 @@ struct OnboardingItemView: View {
         .resizable()
         .aspectRatio(contentMode: .fit)
         .padding(.horizontal, 60)
-      
+
       HStack {
         ForEach(0..<3) {
           RoundedRectangle(cornerRadius: 4.0)
@@ -26,12 +26,11 @@ struct OnboardingItemView: View {
       }
 
       Text(item.title)
-        .font(.largeTitle)
-        .fontWeight(.bold)
+        .font(.system(size: 32, type: .bold))
         .foregroundStyle(.text)
 
       Text(item.description)
-        .font(.subheadline)
+        .font(.system(size: 16))
         .foregroundStyle(.text)
         .multilineTextAlignment(.center)
     }

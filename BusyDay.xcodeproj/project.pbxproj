@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A187BE1F2C5FCF7500E24E97 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A187BE1E2C5FCF7500E24E97 /* Lato-Regular.ttf */; };
+		A187BE222C5FD24200E24E97 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187BE212C5FD24200E24E97 /* Font.swift */; };
+		A187BE242C5FD3B100E24E97 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A187BE232C5FD3B100E24E97 /* Lato-Bold.ttf */; };
 		A19686D62C5E89A700DCFBD8 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19686D52C5E89A700DCFBD8 /* OnboardingView.swift */; };
 		A19686D92C5EA11500DCFBD8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19686D82C5EA11500DCFBD8 /* OnboardingViewModel.swift */; };
 		A19686DC2C5EA21A00DCFBD8 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19686DB2C5EA21A00DCFBD8 /* OnboardingItem.swift */; };
 		A19686E12C5EA91800DCFBD8 /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19686E02C5EA91800DCFBD8 /* OnboardingItemView.swift */; };
 		A1CC38542C5E4371006A6172 /* BusyDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC38532C5E4371006A6172 /* BusyDayApp.swift */; };
 		A1CC38582C5E4373006A6172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC38572C5E4373006A6172 /* Assets.xcassets */; };
-		A1CC385B2C5E4373006A6172 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC385A2C5E4373006A6172 /* Preview Assets.xcassets */; };
 		A1CC38652C5E4373006A6172 /* BusyDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC38642C5E4373006A6172 /* BusyDayTests.swift */; };
 		A1CC386F2C5E4373006A6172 /* BusyDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC386E2C5E4373006A6172 /* BusyDayUITests.swift */; };
 		A1CC38712C5E4373006A6172 /* BusyDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC38702C5E4373006A6172 /* BusyDayUITestsLaunchTests.swift */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A187BE1E2C5FCF7500E24E97 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		A187BE212C5FD24200E24E97 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		A187BE232C5FD3B100E24E97 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		A19686D22C5E63A000DCFBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A19686D52C5E89A700DCFBD8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A19686D82C5EA11500DCFBD8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -47,7 +52,6 @@
 		A1CC38502C5E4371006A6172 /* BusyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC38532C5E4371006A6172 /* BusyDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyDayApp.swift; sourceTree = "<group>"; };
 		A1CC38572C5E4373006A6172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1CC385A2C5E4373006A6172 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1CC38602C5E4373006A6172 /* BusyDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusyDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC38642C5E4373006A6172 /* BusyDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyDayTests.swift; sourceTree = "<group>"; };
 		A1CC386A2C5E4373006A6172 /* BusyDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusyDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A187BE1D2C5FCF1C00E24E97 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A187BE232C5FD3B100E24E97 /* Lato-Bold.ttf */,
+				A187BE1E2C5FCF7500E24E97 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A187BE202C5FD22200E24E97 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A187BE212C5FD24200E24E97 /* Font.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		A19686D32C5E892D00DCFBD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,20 +164,13 @@
 				A1CC38572C5E4373006A6172 /* Assets.xcassets */,
 				A19686D22C5E63A000DCFBD8 /* Info.plist */,
 				A1CC38532C5E4371006A6172 /* BusyDayApp.swift */,
+				A187BE1D2C5FCF1C00E24E97 /* Fonts */,
 				A19686DA2C5EA1F100DCFBD8 /* Models */,
+				A187BE202C5FD22200E24E97 /* Shared */,
 				A19686D32C5E892D00DCFBD8 /* Views */,
 				A19686D72C5EA0BE00DCFBD8 /* ViewModels */,
-				A1CC38592C5E4373006A6172 /* Preview Content */,
 			);
 			path = BusyDay;
-			sourceTree = "<group>";
-		};
-		A1CC38592C5E4373006A6172 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A1CC385A2C5E4373006A6172 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		A1CC38632C5E4373006A6172 /* BusyDayTests */ = {
@@ -282,8 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1CC38852C5E4993006A6172 /* .swiftlint.yml in Resources */,
+				A187BE242C5FD3B100E24E97 /* Lato-Bold.ttf in Resources */,
 				A1CC387E2C5E43BB006A6172 /* README.md in Resources */,
-				A1CC385B2C5E4373006A6172 /* Preview Assets.xcassets in Resources */,
+				A187BE1F2C5FCF7500E24E97 /* Lato-Regular.ttf in Resources */,
 				A1CC38582C5E4373006A6172 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +347,7 @@
 			files = (
 				A19686E12C5EA91800DCFBD8 /* OnboardingItemView.swift in Sources */,
 				A19686D62C5E89A700DCFBD8 /* OnboardingView.swift in Sources */,
+				A187BE222C5FD24200E24E97 /* Font.swift in Sources */,
 				A19686DC2C5EA21A00DCFBD8 /* OnboardingItem.swift in Sources */,
 				A1CC38542C5E4371006A6172 /* BusyDayApp.swift in Sources */,
 				A19686D92C5EA11500DCFBD8 /* OnboardingViewModel.swift in Sources */,
@@ -497,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BusyDay/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = JZPFJ8Y6R9;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -535,7 +551,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BusyDay/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = JZPFJ8Y6R9;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
