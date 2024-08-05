@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct WelcomingView: View {
+  @Environment(\.dismiss)
+  private var dismiss
+
   var body: some View {
     VStack(spacing: 64) {
       HStack {
-        Button(action: {}) {
+        Button {
+          dismiss()
+        } label: {
           Image(systemName: "chevron.left")
             .imageScale(.large)
             .foregroundStyle(.white)
