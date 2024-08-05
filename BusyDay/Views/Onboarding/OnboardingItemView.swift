@@ -30,7 +30,7 @@ struct OnboardingItemView: View {
         .foregroundStyle(.text)
 
       Text(item.description)
-        .font(.system(size: 16))
+        .font(.system())
         .foregroundStyle(.text)
         .multilineTextAlignment(.center)
     }
