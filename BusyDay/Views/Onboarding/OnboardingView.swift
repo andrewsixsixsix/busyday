@@ -72,18 +72,10 @@ struct OnboardingView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 5.0))
             }
           } else {
-            Button {
+            BDButton("next") {
               withAnimation {
                 vm.next()
               }
-            } label: {
-              Text("NEXT")
-                .font(.system())
-                .padding(.horizontal, 24)
-                .padding(.vertical, 12)
-                .foregroundStyle(.white)
-                .background(.accent)
-                .clipShape(RoundedRectangle(cornerRadius: 5.0))
             }
           }
         }

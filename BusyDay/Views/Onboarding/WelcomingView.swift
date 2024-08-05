@@ -38,26 +38,8 @@ struct WelcomingView: View {
       Spacer()
 
       VStack(spacing: 24) {
-        Button(action: {}) {
-          Text("LOGIN")
-            .font(.system())
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 12)
-            .background(.accent)
-            .clipShape(RoundedRectangle(cornerRadius: 5.0))
-        }
-
-        Button(action: {}) {
-          Text("CREATE ACCOUNT")
-            .font(.system())
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 12)
-            .overlay {
-              RoundedRectangle(cornerRadius: 5.0)
-                .stroke(lineWidth: 1.0)
-                .fill(.accent)
-            }
-        }
+        BDButton("login", size: .wide) {}
+        BDButton("create account", size: .wide, style: .withBorder) {}
       }
       .foregroundStyle(.white)
     }

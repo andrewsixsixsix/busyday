@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12EAD1A2C612064000689A4 /* BDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12EAD192C612064000689A4 /* BDButton.swift */; };
 		A187BE1F2C5FCF7500E24E97 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A187BE1E2C5FCF7500E24E97 /* Lato-Regular.ttf */; };
 		A187BE222C5FD24200E24E97 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A187BE212C5FD24200E24E97 /* Font.swift */; };
 		A187BE242C5FD3B100E24E97 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A187BE232C5FD3B100E24E97 /* Lato-Bold.ttf */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A12EAD192C612064000689A4 /* BDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDButton.swift; sourceTree = "<group>"; };
 		A187BE1E2C5FCF7500E24E97 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		A187BE212C5FD24200E24E97 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		A187BE232C5FD3B100E24E97 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A12EAD182C611FF2000689A4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A12EAD192C612064000689A4 /* BDButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A187BE1D2C5FCF1C00E24E97 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		A187BE202C5FD22200E24E97 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A12EAD182C611FF2000689A4 /* Components */,
 				A187BE212C5FD24200E24E97 /* Font.swift */,
 			);
 			path = Shared;
@@ -351,6 +362,7 @@
 				A19686E12C5EA91800DCFBD8 /* OnboardingItemView.swift in Sources */,
 				A19686D62C5E89A700DCFBD8 /* OnboardingView.swift in Sources */,
 				A187BE222C5FD24200E24E97 /* Font.swift in Sources */,
+				A12EAD1A2C612064000689A4 /* BDButton.swift in Sources */,
 				A19686DC2C5EA21A00DCFBD8 /* OnboardingItem.swift in Sources */,
 				A1CC38542C5E4371006A6172 /* BusyDayApp.swift in Sources */,
 				A19686D92C5EA11500DCFBD8 /* OnboardingViewModel.swift in Sources */,
