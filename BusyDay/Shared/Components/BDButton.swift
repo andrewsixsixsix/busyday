@@ -11,12 +11,14 @@ struct BDButton: View {
   let text: String
   let size: Size
   let style: Style
+  let disabled: Bool
   let action: () -> Void
 
-  init(_ text: String, size: Size = .compact, style: Style = .filled, action: @escaping () -> Void) {
+  init(_ text: String, size: Size = .compact, style: Style = .filled, disabled: Bool = false, action: @escaping () -> Void) {
     self.text = text
     self.size = size
     self.style = style
+    self.disabled = disabled
     self.action = action
   }
 
@@ -27,10 +29,11 @@ struct BDButton: View {
     case .wide:
       .infinity
     }
+    let color: Color = disabled ? .textDisabled : .text
 
-    return Text(text.uppercased())
+    return Text(text)
       .font(.system())
-      .foregroundStyle(.white)
+      .foregroundStyle(color)
       .frame(maxWidth: maxWidth)
       .padding(.horizontal, 24)
       .padding(.vertical, 12)
@@ -42,18 +45,19 @@ struct BDButton: View {
     } label: {
       switch style {
       case .filled:
-        filled()
+        filled(disabled)
       case .withBorder:
         withBorder()
       }
     }
+    .disabled(disabled)
   }
 }
 
 extension BDButton {
-  func filled() -> some View {
+  func filled(_ disabled: Bool) -> some View {
     baseLabel
-      .background(.accent)
+      .background(disabled ? .accent.opacity(0.5) : .accent)
       .clipShape(RoundedRectangle(cornerRadius: 5.0))
   }
 
@@ -80,5 +84,5 @@ extension BDButton {
 }
 
 #Preview {
-  BDButton("button") {}
+  BDButton("BUTTON") {}
 }

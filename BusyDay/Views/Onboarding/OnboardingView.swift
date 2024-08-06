@@ -59,10 +59,7 @@ struct OnboardingView: View {
           Spacer()
 
           if lastItem {
-            NavigationLink {
-              WelcomingView()
-                .navigationBarBackButtonHidden()
-            } label: {
+            NavigationLink { WelcomingView() } label: {
               Text("GET STARTED")
                 .font(.system())
                 .padding(.horizontal, 24)
@@ -72,7 +69,7 @@ struct OnboardingView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 5.0))
             }
           } else {
-            BDButton("next") {
+            BDButton("NEXT") {
               withAnimation {
                 vm.next()
               }
