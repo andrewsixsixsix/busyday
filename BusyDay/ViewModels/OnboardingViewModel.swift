@@ -9,7 +9,7 @@ import Foundation
 
 extension OnboardingView {
   @Observable
-  class ViewModel {
+  class ViewModel: ObservableObject {
     let onboardingItems = OnboardingItem.items
     var itemIndex: Int? = 0
 

@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
-  @State private var username: String = ""
-  @State private var password: String = ""
+  @StateObject private var vm = ViewModel()
 
   private var loginDisabled: Bool {
-    username.isEmpty || password.isEmpty
+    vm.credentials.username.isEmpty || vm.credentials.password.isEmpty
   }
 
   var body: some View {
@@ -34,7 +33,7 @@ struct LoginView: View {
 
           TextField(
             "username",
-            text: $username,
+            text: $vm.credentials.username,
             prompt: Text("Enter your username").foregroundColor(.gray.opacity(0.8)))
           .padding(.horizontal, 12)
           .padding(.vertical, 16)
@@ -49,7 +48,7 @@ struct LoginView: View {
 
           SecureField(
             "password",
-            text: $password,
+            text: $vm.credentials.password,
             prompt: Text("• • • • • • • • • •")
               .font(.system())
               .foregroundColor(.gray.opacity(0.8)))

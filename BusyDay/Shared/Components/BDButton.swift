@@ -29,7 +29,7 @@ struct BDButton: View {
     case .wide:
       .infinity
     }
-    let color: Color = disabled ? .textDisabled : .text
+    let color: Color = disabled ? .textDisabled : .white
 
     return Text(text)
       .font(.system())

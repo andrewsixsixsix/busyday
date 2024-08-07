@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct OnboardingView: View {
-  @State var vm = ViewModel()
+  @StateObject private var vm = ViewModel()
 
   var body: some View {
     NavigationStack {
       VStack {
         HStack {
           if showSkipButton {
-            NavigationLink {
-              WelcomingView()
-                .navigationBarBackButtonHidden()
-            } label: {
+            NavigationLink { WelcomingView() } label: {
               Text("SKIP")
                 .font(.system())
                 .foregroundStyle(.gray)

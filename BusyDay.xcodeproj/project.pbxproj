@@ -24,6 +24,8 @@
 		A1CC38712C5E4373006A6172 /* BusyDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC38702C5E4373006A6172 /* BusyDayUITestsLaunchTests.swift */; };
 		A1CC387E2C5E43BB006A6172 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1CC387D2C5E43BB006A6172 /* README.md */; };
 		A1CC38852C5E4993006A6172 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A1CC38842C5E4993006A6172 /* .swiftlint.yml */; };
+		A1F575652C63EAF50093325A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F575642C63EAF50093325A /* LoginViewModel.swift */; };
+		A1F575672C63EBB70093325A /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F575662C63EBB70093325A /* LoginCredentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		A1CC38702C5E4373006A6172 /* BusyDayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyDayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1CC387D2C5E43BB006A6172 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A1CC38842C5E4993006A6172 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A1F575642C63EAF50093325A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A1F575662C63EBB70093325A /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +125,8 @@
 		A19686D32C5E892D00DCFBD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A19686D42C5E895200DCFBD8 /* Onboarding */,
 				A17BBE522C614F1600BE0821 /* LoginView.swift */,
+				A19686D42C5E895200DCFBD8 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +144,7 @@
 		A19686D72C5EA0BE00DCFBD8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A1F575642C63EAF50093325A /* LoginViewModel.swift */,
 				A19686D82C5EA11500DCFBD8 /* OnboardingViewModel.swift */,
 			);
 			path = ViewModels;
@@ -148,6 +153,7 @@
 		A19686DA2C5EA1F100DCFBD8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1F575662C63EBB70093325A /* LoginCredentials.swift */,
 				A19686DB2C5EA21A00DCFBD8 /* OnboardingItem.swift */,
 			);
 			path = Models;
@@ -370,6 +376,8 @@
 				A19686DC2C5EA21A00DCFBD8 /* OnboardingItem.swift in Sources */,
 				A1CC38542C5E4371006A6172 /* BusyDayApp.swift in Sources */,
 				A19686D92C5EA11500DCFBD8 /* OnboardingViewModel.swift in Sources */,
+				A1F575652C63EAF50093325A /* LoginViewModel.swift in Sources */,
+				A1F575672C63EBB70093325A /* LoginCredentials.swift in Sources */,
 				A187BE262C5FD79000E24E97 /* WelcomingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
